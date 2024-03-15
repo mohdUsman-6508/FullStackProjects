@@ -19,16 +19,16 @@ import cors from "cors";
 const app = express();
 
 //middlewares
+app.use(cors()); //allow all ORIGINS with default of cors(*)
 app.use(express.json()); //must for body parsing
 app.use("/books", booksRoute); //routes
-// app.use(cors()); //allow all ORIGINS with default of cors(*)
-app.use(
-  cors({
-    origin: "http://localhost:5555",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type"],
-  })
-); //allow custom origins
+//app.use(
+// cors({
+//   origin: "http://localhost:5555",
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+//   allowedHeaders: ["Content-Type"],
+// })
+// ); //allow custom origins
 
 app.get("/", (req, res) => {
   res.status(201).send("WELCOME TO BOOK STORE!");
