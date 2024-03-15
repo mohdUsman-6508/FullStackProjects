@@ -45,6 +45,9 @@ function Home() {
                 Author
               </th>
               <th className="border border-slate-600 rounded-md max-md:hidden">
+                Price(₹)
+              </th>
+              <th className="border border-slate-600 rounded-md max-md:hidden">
                 Publish Year
               </th>
               <th className="border border-slate-600 rounded-md">Operations</th>
@@ -61,6 +64,9 @@ function Home() {
                 </td>
                 <td className="border border-slate-700 rounded-md text-center max-md:hidden">
                   {book.authorName}
+                </td>
+                <td className="border border-slate-700 rounded-md text-center max-md:hidden">
+                  {book.price}
                 </td>
                 <td className="border border-slate-700 rounded-md text-center max-md:hidden">
                   {book.publishedYear}
