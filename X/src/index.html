@@ -14,7 +14,7 @@
   <body class="bg-black text-white p-5">
     <div class="flex container mx-auto">
       <div class="first w-[70%]">
-        <div class="logo invert">
+        <div class="logo invert flex w-1/2 justify-start mx-1">
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -124,7 +124,7 @@
       </div>
       <!-- /////////////////////// -->
       <div
-        class="second w-full border border-x-[2px]  border-gray-700 border-y-0"
+        class="second w-full min-w-[580px] border border-x-[2px]  border-gray-700 border-y-0"
       >
         <div class="top flex m-3 relative">
           <div class="absolute w-16 h-1 rounded-full bg-blue-500 top-9 left-[15.5%] z-10 "></div>
@@ -271,12 +271,12 @@
         <div class="search">
           <input
             type="text"
-            class="w-2/3 rounded-full bg-[#16181c] text-white mx-3 px-3 py-2"
+            class="w-[70%] rounded-full bg-[#16181c] text-white mx-3 px-3 py-2"
             placeholder="Search"
           />
         </div>
-        <div class="whats m-3 bg-[#16181c] w-2/3 py-5 rounded-xl">
-          <h1 class="text-xl font-bold px-3 space-y-3">Whats Happening</h1>
+        <div class="whats m-3 bg-[#16181c] w-[70%] py-5 rounded-xl">
+          <h1 class="text-xl font-bold px-3 space-y-3">What's Happening</h1>
           <div class="px-3 p-3 hover:bg-gray-800 cursor-pointer">
             <div class="text-sm text-gray-200">Trending In India</div>
             <div class="font-bold">#Warrior</div>
@@ -293,26 +293,33 @@
             <div class="text-sm text-gray-200">88.7K posts</div>
           </div>
           <div class="px-3 p-3 hover:bg-gray-800 cursor-pointer">
-            <div class="text-sm text-gray-200">Trending In Delhi</div>
+            <div class="text-sm text-gray-200">Trending In Politics</div>
             <div class="font-bold">#Roads</div>
             <div class="text-sm text-gray-200">18.2K posts</div>
           </div>
         </div>
-        <div class="follow m-3 bg-[#16181c] w-2/3 py-5 rounded-xl">
+        <div class="follow m-3 bg-[#16181c] w-[70%] py-5 rounded-xl">
           <h1 class="text-xl font-bold px-3 space-y-4">Who to follow</h1>
-          <div class="p-3 px-3 space-y-2">
-            <div class="text-sm font-bold cursor-pointer text-gray-200">
-              Rabbits
-            </div>
-            <div class="text-sm font-bold cursor-pointer text-gray-200">
-              Mongoose
-            </div>
-            <div class="text-sm font-bold cursor-pointer text-gray-200">
-              Elephant
-            </div>
-            <div class="text-sm font-bold cursor-pointer text-gray-200">
-              Rabbits
-            </div>
+          <div class="p-3 px-3 space-y-2 mb-2 flex justify-between items-center gap-2 hover:bg-slate-800">
+           <div class="w-28"><img alt="" class="rounded-full" src="https://pbs.twimg.com/profile_images/989172493889032194/24lgxjdh_bigger.jpg" ></div>
+           <div class="">
+            <span class="font-bold text-[16px]">Aligarh Muslim University</span>
+            <span class="text-gray-400 text-[15px]">@AMUofficialsPRO</span>
+           </div>
+           <div class="block bg-white text-black font-bold px-5 py-2 rounded-xl hover:bg-slate-200 hover:cursor-pointer">
+            <button>Follow</button>
+           </div>
+          </div>
+       
+          <div class="p-3 px-3 space-y-2 flex justify-between items-center gap-2 hover:bg-slate-800">
+            <div class="w-16"> <img alt="" class="rounded-full"  src="https://pbs.twimg.com/profile_images/1189494401359208448/AwbXHtpn_bigger.jpg" ></div>
+           <div class="">
+            <span class="font-bold text-[16px]">Ratan N.Tata</span>
+            <span class="text-gray-400 text-[15px]">@RNTata2000</span>
+           </div>
+           <div class="block bg-white text-black font-bold px-5 py-2 rounded-xl hover:bg-slate-200 hover:cursor-pointer">
+            <button>Follow</button>
+           </div>
           </div>
           <div class="text-blue-600 my-1 mx-3">Show More</div>
         </div>
